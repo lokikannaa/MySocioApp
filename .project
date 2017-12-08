@@ -33,4 +33,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>WebContent/WEB-INF/lib/javax.servlet-3.0.0.v201112011016-sources.jar</name>
+			<type>1</type>
+			<location>C:/Users/Lokesh/Downloads/javax.servlet-3.0.0.v201112011016-sources.jar</location>
+		</link>
+	</linkedResources>
 </projectDescription>

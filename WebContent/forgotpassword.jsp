@@ -1,6 +1,4 @@
 
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,7 +20,6 @@
             <input type="email" name="email" class="email" placeholder="Email" ><br>
       
             <input type="submit" value="Sendemail" class="button" >
-            
         </form>
 		</section>
 		<%@include file="footer.jsp" %> 

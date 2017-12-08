@@ -6,6 +6,7 @@
 package controller;
 
 import java.util.Properties;
+
 import javax.mail.Address;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -50,7 +51,7 @@ public class MailUtilGmail {
 
         // 4 - send the message
         Transport transport = session.getTransport();
-        transport.connect("sp.sivalingam1993@gmail.com", "Subbunmuthu93*");
+        transport.connect("lkannan@uncc.edu", "GREusa360_");
         transport.sendMessage(message, message.getAllRecipients());
         transport.close();
     }

@@ -5,11 +5,38 @@
  */
 package business;
 import java.io.Serializable;
-import java.util.Date;
 
 
 public class User implements Serializable {
-    //define attributes fullname, ...
+    public String getPasswords() {
+		return passwords;
+	}
+
+
+
+	public void setPasswords(String passwords) {
+		this.passwords = passwords;
+	}
+
+
+
+	public String getLast_Login_Time() {
+		return Last_Login_Time;
+	}
+
+
+
+	public void setLast_Login_Time(String last_Login_Time) {
+		Last_Login_Time = last_Login_Time;
+	}
+
+
+
+	public void setUsertype(String usertype) {
+		this.usertype = usertype;
+	}
+
+	//define attributes fullname, ...
      private int userId; 
 
    
@@ -60,7 +87,16 @@ public class User implements Serializable {
         
     }
      
-     public User(String fullName, String email, String dobDay, String dobMonth, String dobYear, String nickName,String passwords, String picfilepath, String salt ) {
+     @Override
+	public String toString() {
+		return "User [userId=" + userId + ", fullName=" + fullName + ", email=" + email + ", dobDay=" + dobDay
+				+ ", dobMonth=" + dobMonth + ", dobYear=" + dobYear + ", nickName=" + nickName + ", Last_Login_Time="
+				+ Last_Login_Time + ", usertype=" + usertype + "]";
+	}
+
+
+
+	public User(String fullName, String email, String dobDay, String dobMonth, String dobYear, String nickName,String passwords, String picfilepath, String salt ) {
         this.fullName = fullName;
         this.email = email;
         this.dobDay = dobDay; 
